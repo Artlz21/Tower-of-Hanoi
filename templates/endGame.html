@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .congrats{
+                justify-content: center;
+            }
+
+            .total{
+                justify-content: center;
+            }
+        </style>
+        <title>Tower of Hanoi</title>
+    </head>
+    <body background="{{ url_for('static', filename='img/background.jpg')}}">
+        <!-- Congradulate-->
+        <div class="name">
+            <h1 class="congrats"> Congrats {{ inNameEnd }} you solved the Tower of Hanoi in: </h1>
+        </div>
+
+        <!-- Display score-->
+        <div class="score">
+            <h1 class="total"> {{ inScore }} </h1>
+        </div>
+    </body>
+</html>

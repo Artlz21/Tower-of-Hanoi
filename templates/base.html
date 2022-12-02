@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+
+        <title> Towers of Hanoi </title>
+    </head>
+
+    <body background="{{ url_for('static', filename='img/background.jpg')}}">
+        <!-- Title for game -->
+        <div class="title">
+            <h1 class="title-text"> <a href="https://replit.com/@BRosario/TowersOfHanoiProjectCopy#app.py">Tower of Hanoi</a> </h1>
+        </div>        
+
+        <!-- image of game -->
+        <div class="GameImage">
+        
+            <div class="Peg">
+                    
+                    <div class="peg1">
+                        <img src="{{ url_for('static', filename='img/disk1.png')}}" class="disk1">            
+                        <img src="{{ url_for('static', filename='img/disk2.png')}}" class="disk2">                
+                        <img src="{{ url_for('static', filename='img/disk3.png')}}" class="disk3">
+                        <img src="{{ url_for('static', filename='img/disk4.png')}}" class="disk4">
+                    </div>
+                    
+            </div>
+
+
+            <div class="Peg">                
+                <img src="{{ url_for('static', filename='img/peg.png')}}" class="peg2">
+                                
+            </div>
+
+            <div class="Peg">
+                    <img src="{{ url_for('static', filename='img/peg.png')}}" class="peg3">
+                            
+            </div>                
+            <!-- 
+                        
+                    
+             -->
+            
+            
+        </div>
+
+        <!-- enter player name -->
+
+        <div class="Start">
+            <form action="#" method="post">
+            <!-- start button for game -->
+            
+                <button class="StartButton" type="submit"> Start game! </button>
+
+            </form>
+        </div>
+        
+    </body>
+</html>
